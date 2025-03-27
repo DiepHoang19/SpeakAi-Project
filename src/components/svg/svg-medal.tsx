@@ -7,9 +7,6 @@ const SVGMedal = () => (
     x="0px"
     y="0px"
     viewBox="0 0 488 488"
-    style={{
-      enableBackground: "new 0 0 488 488",
-    }}
     xmlSpace="preserve"
   >
     <g transform="translate(0 -540.36)">
