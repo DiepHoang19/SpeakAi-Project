@@ -1,10 +1,47 @@
 "use client";
+import { yupResolver } from "@hookform/resolvers/yup";
 import React from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
 function Register() {
+  const RegisterSchema = yup.object({
+    userName: yup.string().required("userName is required"),
+    email: yup
+      .string()
+      .required("Email is required")
+      .email("Please enter correct email format"),
+    password: yup
+      .string()
+      .required("Password is required")
+      .min(6, "Password must be at least 6 characters"),
+    confirmPassword: yup
+      .string()
+      .oneOf([yup.ref("password")], "Passwords must match")
+      .required("Confirm Password is required"),
+  });
+  const defaultValues = {
+    userName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  };
+
+  const methods = useForm({
+    resolver: yupResolver(RegisterSchema),
+    defaultValues,
+  });
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = methods;
+
+  const onSubmitForm = (values: any) => {};
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit(onSubmitForm)}>
         <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Username
@@ -23,11 +60,16 @@ function Register() {
               </svg>
             </div>
             <input
+              {...register("userName")}
               type="text"
+              name="userName"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Choose a username"
             />
           </div>
+          <p className="text-red-600 mt-2 text-xs">
+            {errors.userName?.message}
+          </p>
         </div>
         <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -47,11 +89,14 @@ function Register() {
               </svg>
             </div>
             <input
+              {...register("email")}
+              name="email"
               type="text"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Enter your email address"
             />
           </div>
+          <p className="text-red-600  mt-2 text-xs">{errors.email?.message}</p>
         </div>
         <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -71,11 +116,16 @@ function Register() {
               </svg>
             </div>
             <input
+              {...register("password")}
               type="password"
+              name="password"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Create a password"
             />
           </div>
+          <p className="text-red-600  mt-2 text-xs">
+            {errors.password?.message}
+          </p>
         </div>
         <div className="mb-5 ">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
@@ -95,14 +145,19 @@ function Register() {
               </svg>
             </div>
             <input
+              {...register("confirmPassword")}
               type="password"
-              className="bg-gray-50  border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              name="confirmPassword"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Confirm your password"
             />
           </div>
+          <p className="text-red-600 mt-2 text-xs">
+            {errors.confirmPassword?.message}
+          </p>
         </div>
         <button
-          type="button"
+          type="submit"
           className="text-white mt-4  cursor-pointer w-full bg-[#8861ea] hover:bg-[#8861ea] focus:ring-4 focus:outline-none focus:ring-[#8861ea] font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
           Create account
