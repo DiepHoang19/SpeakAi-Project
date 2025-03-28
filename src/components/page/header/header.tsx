@@ -8,9 +8,9 @@ import React, { useState } from "react";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Practice", href: "/practice" },
-  { name: "Challenges", href: "#" },
-  { name: "Leaderboard", href: "#" },
-  { name: "About", href: "#" },
+  { name: "Challenges", href: "/challenges" },
+  { name: "Leaderboard", href: "/leader-board" },
+  { name: "About", href: "/about" },
 ];
 
 function Header() {
