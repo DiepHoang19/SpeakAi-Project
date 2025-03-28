@@ -1,10 +1,35 @@
 "use client";
+import { yupResolver } from "@hookform/resolvers/yup";
 import React from "react";
+import { useForm } from "react-hook-form";
+import * as yup from "yup";
 
-function SignIn() {
+function SignIn({ setActiveTab }: any) {
+  const SchemaLogin = yup.object({
+    userName: yup.string().required("UserName is required"),
+    password: yup
+      .string()
+      .required("Password is required")
+      .min(6, "Password must be at least 6 characters"),
+  });
+  const defaultValues = { userName: "", password: "" };
+
+  const methods = useForm({
+    resolver: yupResolver(SchemaLogin),
+    defaultValues,
+  });
+
+  const {
+    handleSubmit,
+    register,
+    formState: { errors },
+  } = methods;
+
+  const onSubmitForm = (values: any) => {};
+
   return (
     <>
-      <form>
+      <form onSubmit={handleSubmit(onSubmitForm)} className="sm:p-0 p-4">
         <div className="mb-5">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
             Username
@@ -23,11 +48,16 @@ function SignIn() {
               </svg>
             </div>
             <input
+              {...register("userName")}
               type="text"
+              name="userName"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Choose a username"
             />
           </div>
+          <p className="text-xs text-red-600 mt-2">
+            {errors.userName?.message}
+          </p>
         </div>
 
         <div className="mb-5">
@@ -48,19 +78,24 @@ function SignIn() {
               </svg>
             </div>
             <input
+              {...register("password")}
               type="password"
+              name="password"
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Create a password"
             />
           </div>
+          <p className="text-xs text-red-600 mt-2">
+            {errors.password?.message}
+          </p>
         </div>
         <div className="text-right text-sm text-[#8861ea] cursor-pointer hover:underline">
           Forgot password?
         </div>
 
         <button
-          type="button"
-          className="text-white mt-4  cursor-pointer w-full bg-[#8861ea] hover:bg-[#8861ea] focus:ring-4 focus:outline-none focus:ring-[#8861ea] font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+          type="submit"
+          className="text-white mt-4 cursor-pointer w-full bg-[#8861ea] hover:bg-[#8861ea] focus:ring-4 focus:outline-none focus:ring-[#8861ea] font-medium rounded-lg text-sm px-5 py-2.5 text-center"
         >
           Sign In
         </button>
@@ -68,7 +103,10 @@ function SignIn() {
           <div className="text-center text-sm text-white">
             Don't have an account?
           </div>
-          <div className="text-center text-sm text-[#8861ea] cursor-pointer hover:underline ml-1">
+          <div
+            className="text-center text-sm text-[#8861ea] cursor-pointer hover:underline ml-1"
+            onClick={() => setActiveTab("register")}
+          >
             Create one now
           </div>
         </div>
