@@ -1,7 +1,8 @@
+import Challenges from "@/src/components/page/challenges";
 import React from "react";
 
 function page() {
-  return <div>page</div>;
+  return <Challenges />;
 }
 
 export default page;
