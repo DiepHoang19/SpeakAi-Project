@@ -27,16 +27,18 @@ function Header() {
                 <span className="sr-only">SpeakAI</span>
                 <img
                   alt="logo"
-                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
-                  className="h-8 w-auto"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFhlxCnORmJv-1GfXj6N70XwssHGRSwEuew&s"
+                  className="h-8 w-auto rounded-[8px]"
                 />
               </a>
-              <div className="hidden lg:flex lg:gap-x-12 px-10">
+              <div className="hidden lg:flex lg:gap-x-8 px-10">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-sm/6 font-semibold text-white"
+                    className={`text-sm/6 font-semibold ${
+                      pathname === item.href ? "text-[#6e4dbf]" : "text-white"
+                    } `}
                   >
                     {item.name}
                   </Link>

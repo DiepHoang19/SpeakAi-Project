@@ -1,8 +1,16 @@
 import React from "react";
 
-function CardCommon({ children }: any) {
+interface CardCommonProps {
+  children: any;
+  bg_color?: string;
+  border_color?: string;
+}
+
+function CardCommon({ children, bg_color, border_color }: CardCommonProps) {
   return (
-    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+    <div
+      className={`w-full p-6 bg-[${bg_color}] border border-[${border_color}] rounded-[16px] shadow-sm`}
+    >
       {children}
     </div>
   );

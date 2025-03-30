@@ -3,8 +3,8 @@ import React from "react";
 
 function Transform() {
   return (
-    <div className="mt-16 p-4">
-      <div className="lg:w-4xl w-full  p-4 mx-auto text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 ">
+    <div className="mt-16 p-4 ">
+      <div className="lg:w-4xl w-full p-4 mx-auto text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 ">
         <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           Ready to transform your language skills?
         </h5>
@@ -14,7 +14,7 @@ function Transform() {
         </p>
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
           <a className="w-full sm:w-auto bg-[#8861ea] focus:ring-4 focus:outline-none text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
-            <div className="text-left">
+            <div className="text-left cursor-pointer">
               <div className="text-xs">Get Started Now</div>
             </div>
             <ChevronRightIcon className="w-4 h-4" />
