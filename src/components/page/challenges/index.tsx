@@ -37,37 +37,35 @@ function Challenges() {
       <div className="max-w-screen-2xl mx-auto mt-4 grid grid-cols-1 sm:grid-cols-[30%_70%] gap-4 p-6">
         <ChallengeStats />
         <WeeklyAchievement />
-        <div className="mt-4">
-          <div className="flex items-center space-x-2">
-            <ClockIcon className="w-6 h-6 text-[#7452c9]" />
-            <h3 className="font-bold text-xl">Daily Challenges</h3>
-          </div>
+      </div>
+
+      <div className="max-w-screen-2xl mx-auto mt-4">
+        <div className="flex items-center space-x-2 ml-4">
+          <ClockIcon className="w-6 h-6 text-[#7452c9]" />
+          <h3 className="font-bold text-xl">Daily Challenges</h3>
+        </div>
+        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
+          <ConvertstationStaterts />
+          <BusinesPresentation />
         </div>
       </div>
-      <div className="max-w-screen-2xl mx-auto grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
-        <ConvertstationStaterts />
-        <BusinesPresentation />
-      </div>
-      <div>
-        <div className="mt-4 max-w-screen-2xl mx-auto gap-4 p-6">
-          <div className="flex items-center space-x-2">
-            <CalendarIcon className="w-6 h-6 text-[#7452c9]" />
-            <h3 className="font-bold text-xl">Weekly Challenges</h3>
-          </div>
+
+      <div className="max-w-screen-2xl mx-auto mt-4">
+        <div className="flex items-center space-x-2 ml-4">
+          <CalendarIcon className="w-6 h-6 text-[#7452c9]" />
+          <h3 className="font-bold text-xl">Weekly Challenges</h3>
         </div>
-        <div className="max-w-screen-2xl mx-auto mt-4 grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
+        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
           <TravelDialogue />
           <Storytelling />
         </div>
       </div>
-      <div>
-        <div className="max-w-screen-2xl mx-auto gap-4 p-6">
-          <div className="flex items-center space-x-2">
-            <ArrowTrendingUpIcon className="w-6 h-6 text-[#7452c9]" />
-            <h3 className="font-bold text-xl">Monthly Challenges</h3>
-          </div>
+      <div className="max-w-screen-2xl mx-auto mt-4">
+        <div className="flex items-center space-x-2 ml-4">
+          <ArrowTrendingUpIcon className="w-6 h-6 text-[#7452c9]" />
+          <h3 className="font-bold text-xl">Monthly Challenges</h3>
         </div>
-        <div className="max-w-screen-2xl mx-auto grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
+        <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
           <PublicSpeech />
           <DebateChallenge />
         </div>
