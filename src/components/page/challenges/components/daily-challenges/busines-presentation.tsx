@@ -15,24 +15,24 @@ function BusinesPresentation() {
       </h5>
       <div className="mt-4 flex items-center w-full">
         <div className="space-y-4 mt-4 w-full">
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center  gap-2 sm:gap-4">
             <div className="relative rounded-full font-bold px-3 py-1 text-[12px] text-[#f59e09] ring-[#3b2372] ring-1 bg-[#351e35]">
               Intermediate
             </div>
             <div className="relative rounded-full px-3 py-1 font-bold text-[12px] text-[#8660e7] ring-1 ring-[#3b2372] bg-[#26164c]">
-              150 Points
+              100 Points
             </div>
             <div className="relative flex items-center justify-center font-bold gap-1 rounded-full px-3 py-1 text-[12px] text-[#21b95b] ring-1 ring-[#4b2f8d] bg-[#1c243b]">
               <CheckCircleIcon className="w-4 h-4 text-[#21b95b]" />
               Completed
             </div>
           </div>
-          <div className="flex items-center w-full">
+
+          <div className="flex flex-wrap items-center justify-between w-full mt-2">
             <p className="text-[#d1cde1] text-[12px] flex items-center justify-center gap-2 font-[600]">
-              <UsersIcon className="w-5 h-5 text-white" />
-              237 Participants
+              <UsersIcon className="w-5 h-5 text-white" /> 412 Participants
             </p>
-            <p className="text-[#d1cde1] text-[12px] font-[600] ml-auto flex items-center justify-center gap-2">
+            <p className="text-[#d1cde1] text-[12px] font-[600] flex items-center justify-center gap-2">
               <ArrowTrendingUpIcon className="w-5 h-5 text-white " />
               Level 2
             </p>

@@ -10,7 +10,7 @@ function ChooseAI() {
           learning methods to help you speak with confidence.
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-6">
         <div className="grid sm:grid-cols-3 grid-cols-1 gap-4">
           <div className="max-w-sm p-6 bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm">
             <svg

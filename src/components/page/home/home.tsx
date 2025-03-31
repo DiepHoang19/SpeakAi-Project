@@ -2,6 +2,12 @@ import React from "react";
 import ChooseAI from "../choose-ai";
 import Review from "../review";
 import Transform from "../tranform";
+import {
+  BookmarkIcon,
+  ChartBarIcon,
+  ChartPieIcon,
+  LanguageIcon,
+} from "@heroicons/react/24/outline";
 
 function HomePage() {
   return (
@@ -41,6 +47,24 @@ function HomePage() {
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
+            <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center gap-4 mx-auto mt-8 text-center">
+              <div className="flex items-center gap-2 justify-center">
+                <BookmarkIcon className="w-5 h-5 text-[#8861ea]" />
+                <p>AI Insights</p>
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <LanguageIcon className="w-5 h-5 text-[#8861ea]" />
+                <p>20+ Languages</p>
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <ChartBarIcon className="w-5 h-5 text-[#8861ea]" />
+                <p>Progress Tracking</p>
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <ChartPieIcon className="w-5 h-5 text-[#8861ea]" />
+                <p>Daily Challenges</p>
+              </div>
+            </div>
           </div>
         </div>
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
@@ -53,11 +77,8 @@ function HomePage() {
           />
         </div>
       </div>
-      {/* component why choose speakai */}
       <ChooseAI />
-      {/* component review */}
       <Review />
-      {/* component transform */}
       <Transform />
     </>
   );

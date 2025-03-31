@@ -10,7 +10,7 @@ function Review() {
           abilities with SpeakAl.
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center p-6">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="max-w-sm p-6 bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm">
             <figure className="max-w-screen-md">

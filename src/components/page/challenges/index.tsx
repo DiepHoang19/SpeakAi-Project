@@ -20,7 +20,7 @@ function Challenges() {
   const router = useRouter();
   return (
     <>
-      <div className="mt-[10rem] max-w-screen-2xl mx-auto sm:p-2 p-6">
+      <div className=" mt-[4rem] sm:mt-[10rem] max-w-screen-2xl mx-auto sm:p-2 p-6">
         <div className="flex items-center gap-4 ">
           <ArrowLeftIcon
             className="w-4 h-4 cursor-pointer"
@@ -34,7 +34,7 @@ function Challenges() {
           points, and compete with other learners.
         </p>
       </div>
-      <div className="max-w-screen-2xl mx-auto mt-4 grid grid-cols-1 sm:grid-cols-[30%_70%] gap-4 p-6">
+      <div className="max-w-screen-2xl mx-auto mt-0 sm:mt-4 grid grid-cols-1 sm:grid-cols-[30%_70%] gap-4 p-6">
         <ChallengeStats />
         <WeeklyAchievement />
       </div>
