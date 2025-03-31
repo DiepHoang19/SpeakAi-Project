@@ -288,7 +288,10 @@ function ChallengeDetail() {
                 </div>
                 <div className="mt-10">
                   {leaderBoard.map((item) => (
-                    <div className="flex items-center space-y-4">
+                    <div
+                      className="flex items-center space-y-4"
+                      key={item.name}
+                    >
                       {/* Avatar */}
                       <div className="bg-[#331e60] w-[40px] h-[40px] flex items-center justify-center rounded-full">
                         <p className="text-base text-[#8861ea] sm:text-[14px] font-bold">
