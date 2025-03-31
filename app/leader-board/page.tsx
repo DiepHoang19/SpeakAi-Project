@@ -1,7 +1,8 @@
+import Leaderboard from "@/src/components/page/leader-board";
 import React from "react";
 
 function page() {
-  return <div>page</div>;
+  return <Leaderboard />;
 }
 
 export default page;

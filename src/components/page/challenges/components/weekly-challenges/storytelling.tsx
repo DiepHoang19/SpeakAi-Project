@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   ArrowTrendingUpIcon,
@@ -5,7 +6,9 @@ import {
   FireIcon,
   UsersIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 function Storytelling() {
+  const router = useRouter();
   return (
     <div className="bg-[#231246] border border-[#39246c] rounded-[16px] shadow-sm p-6">
       <h5 className="text-xl font-bold text-white">Storytelling</h5>
@@ -43,6 +46,7 @@ function Storytelling() {
           </div>
           <button
             type="button"
+            onClick={() => router.push("/challenges/storytelling")}
             className="text-[#f1eefd] flex items-center justify-center gap-2 font-[600] cursor-pointer w-full bg-[#8861ea] hover:bg-[#8861ea] focus:ring-4 focus:ring-[#8861ea]  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
           >
             <FireIcon className="w-4 h-4 text-white" />
