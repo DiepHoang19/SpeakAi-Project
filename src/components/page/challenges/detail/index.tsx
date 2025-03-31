@@ -88,7 +88,7 @@ function ChallengeDetail() {
             <div className="flex items-center gap-2">
               <ArrowLeftIcon
                 className="w-4 h-4 cursor-pointer"
-                onClick={() => router.push("/")}
+                onClick={() => router.push("/challenges")}
               />
               <p className="text-xs text-white">Back to Challenges</p>
             </div>
@@ -332,6 +332,7 @@ function ChallengeDetail() {
 
                   <button
                     type="button"
+                    onClick={() => router.push("/leader-board")}
                     className="text-white mt-4 cursor-pointer w-full border border-[#4b2f8d] bg-[#010005] hover:bg-[#010005]  font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none ring-[#4b2f8d]"
                   >
                     View Full Leaderboard

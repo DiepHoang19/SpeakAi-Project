@@ -1,12 +1,15 @@
+"use client";
 import {
   ArrowTrendingUpIcon,
   ClockIcon,
   FireIcon,
   UsersIcon,
 } from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 function PublicSpeech() {
+  const router = useRouter();
   return (
     <div className="bg-[#231246] border border-[#39246c] rounded-[16px] relative shadow-sm p-6">
       <div className="bg-[#8861ea] p-2 rounded-tr-[16px] rounded-bl-[16px] absolute right-0 top-0">
@@ -50,6 +53,7 @@ function PublicSpeech() {
 
           <button
             type="button"
+            onClick={() => router.push("/challenges/public-speech")}
             className="text-[#f1eefd] flex items-center justify-center gap-2 font-[600] cursor-pointer w-full mt-2 bg-[#8861ea] hover:bg-[#8861ea] focus:ring-4 focus:ring-[#8861ea]  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
           >
             <FireIcon className="w-4 h-4 text-white" />
