@@ -6,11 +6,15 @@ import * as yup from "yup";
 
 function SignIn({ setActiveTab }: any) {
   const SchemaLogin = yup.object({
-    userName: yup.string().required("UserName is required"),
+    userName: yup
+      .string()
+      .required("UserName is required")
+      .max(64, "Maximum 64 characters allowed"),
     password: yup
       .string()
       .required("Password is required")
-      .min(6, "Password must be at least 6 characters"),
+      .min(6, "Password must be at least 6 characters")
+      .max(64, "Maximum 64 characters allowed"),
   });
   const defaultValues = { userName: "", password: "" };
 

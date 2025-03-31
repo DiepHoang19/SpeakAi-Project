@@ -10,15 +10,19 @@ function Register({ setActiveTab }: any) {
     email: yup
       .string()
       .required("Email is required")
-      .email("Please enter correct email format"),
+      .email("Please enter correct email format")
+      .max(64, "Maximum 64 characters allowed"),
     password: yup
       .string()
       .required("Password is required")
-      .min(6, "Password must be at least 6 characters"),
+      .min(6, "Password must be at least 6 characters")
+      .max(64, "Maximum 64 characters allowed"),
     confirmPassword: yup
       .string()
       .oneOf([yup.ref("password")], "Passwords must match")
-      .required("Confirm Password is required"),
+      .required("Confirm Password is required")
+      .min(6, "Confirm Password must be at least 6 characters")
+      .max(64, "Maximum 64 characters allowed"),
   });
   const defaultValues = {
     userName: "",
