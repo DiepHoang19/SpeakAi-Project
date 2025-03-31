@@ -4,7 +4,7 @@ import React from "react";
 function Transform() {
   return (
     <div className="mt-16 p-4">
-      <div className="lg:w-4xl w-full p-4 mx-auto text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 ">
+      <div className="lg:w-4xl w-full p-4 mx-auto text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8">
         <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           Ready to transform your language skills?
         </h5>
