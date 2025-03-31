@@ -4,8 +4,8 @@ function MeetOurTeam() {
   return (
     <>
       <div className="text-center">
-        <h2 className="text-white text-xl">Meet Our Team</h2>
-        <p className="text-white text-lg">
+        <h2 className="text-white text-3xl">Meet Our Team</h2>
+        <p className="text-white text-lg mt-4">
           SpeakAl is built by a diverse team of language experts, Al
           researchers, and education specialists working together to
           revolutionize language learning.
@@ -17,11 +17,11 @@ function MeetOurTeam() {
             key={index}
             className="w-full h-[35rem] mx-auto text-center bg-[#231245] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 flex flex-col items-center justify-center relative"
           >
-            <div className="bg-[#39246a] rounded-full w-[100px] h-[100px] flex items-center justify-center text-[#8861ea] text-3xl font-bold">
+            <div className="bg-[#39246a]   rounded-full w-[100px] h-[100px] flex items-center justify-center text-[#8861ea] text-3xl font-bold">
               SC
             </div>
 
-            <div className="absolute bottom-0 left-0 w-full bg-[#190a37] p-4 space-y-2">
+            <div className="absolute rounded-[16px] bottom-0 left-0 w-full bg-[#190a37] p-4 space-y-2">
               <p className="text-base text-left text-white sm:text-2xl font-bold">
                 Sarah Chen
               </p>
