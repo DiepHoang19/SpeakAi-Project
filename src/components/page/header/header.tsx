@@ -2,7 +2,7 @@
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useState } from "react";
 
 const navigation = [
@@ -16,6 +16,7 @@ const navigation = [
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <>
@@ -63,12 +64,12 @@ function Header() {
               >
                 Sign In
               </Link>
-              <a
-                href="#"
-                className="rounded-[10px] bg-[#9061F9] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#9061F9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9061F9]"
+              <button
+                onClick={() => router.push("/sign-in?tab=register")}
+                className="rounded-[10px] cursor-pointer bg-[#9061F9] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#9061F9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9061F9]"
               >
                 Get Started
-              </a>
+              </button>
             </div>
           </nav>
           <Dialog

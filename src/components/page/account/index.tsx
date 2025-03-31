@@ -2,7 +2,7 @@
 import Register from "@/src/components/page/account/register";
 import SignIn from "@/src/components/page/account/sign-in";
 import { ArrowLeftIcon } from "@heroicons/react/16/solid";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 
 import React, { useState } from "react";
 
@@ -19,7 +19,10 @@ function Account() {
     },
   ];
 
-  const [activeTab, setActiveTab] = useState(tabs[0].code);
+  const searchParams = useSearchParams();
+  const valueTab = searchParams.get("tab");
+
+  const [activeTab, setActiveTab] = useState(valueTab || tabs[0].code);
 
   return (
     <div className="mt-16 mx-auto lg:w-7xl">
@@ -50,11 +53,14 @@ function Account() {
                   {tabs.map((tab) => (
                     <button
                       key={tab.code}
-                      onClick={() => setActiveTab(tab.code)}
+                      onClick={() => {
+                        setActiveTab(tab.code);
+                        router.push(`?tab=${tab.code}`);
+                      }}
                       className={`rounded-[10px] px-3 py-2 flex items-center justify-center gap-2 text-sm font-medium w-full text-center ${
                         activeTab === tab.code
                           ? "bg-[#010005] text-white cursor-pointer"
-                          : "text-white  cursor-pointer"
+                          : "text-white cursor-pointer"
                       }`}
                     >
                       {tab.name}
