@@ -37,7 +37,7 @@ function Practice() {
 
   return (
     <>
-      <div className="mt-[10rem] p-2 max-w-screen-2xl mx-auto">
+      <div className=" mt-[5rem] sm:mt-[10rem] sm:p-2 max-w-screen-2xl mx-auto p-6">
         <div className="flex items-center gap-4 ">
           <ArrowLeftIcon
             className="w-4 h-4 cursor-pointer"
@@ -50,7 +50,7 @@ function Practice() {
           Perfect your pronunciation and speaking skills with real-time AI
           feedback. Choose an exercise type below to get started.
         </p>
-        <div className="mt-10 bg-[#4b2f8d] max-w-screen-lg mx-auto rounded-[10px]">
+        <div className=" mt-4 sm:mt-10 bg-[#4b2f8d] max-w-screen-lg mx-auto rounded-[10px]">
           <div className="sm:hidden">
             <label htmlFor="tabs" className="sr-only">
               Select a tab

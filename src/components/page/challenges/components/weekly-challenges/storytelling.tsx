@@ -17,7 +17,7 @@ function Storytelling() {
       </h5>
       <div className="mt-4 flex items-center w-full">
         <div className="space-y-4 mt-4 w-full">
-          <div className="flex items-center space-x-4">
+          <div className="flex flex-wrap items-center  gap-2 sm:gap-4">
             <div className="relative rounded-full font-bold px-3 py-1 text-[12px] text-[#ef4444] ring-[#482c85] ring-1 bg-[#341139]">
               Advanced
             </div>
@@ -25,25 +25,26 @@ function Storytelling() {
               300 Points
             </div>
             <div className="relative flex items-center justify-center font-bold gap-1 rounded-full px-3 py-1 text-[12px] text-[#21b95b] ring-1 ring-[#4b2f8d] bg-[#1c243b]">
-              <ClockIcon className="w-4 h-4 text-white" />5 days left
+              <ClockIcon className="w-4 h-4 text-white" /> 5 days left
             </div>
           </div>
-          <div className="flex items-center w-full">
+
+          <div className="flex flex-wrap items-center justify-between w-full mt-2">
             <p className="text-[#d1cde1] text-[12px] flex items-center justify-center gap-2 font-[600]">
-              <UsersIcon className="w-5 h-5 text-white" />
-              189 Participants
+              <UsersIcon className="w-5 h-5 text-white" /> 189 Participants
             </p>
-            <p className="text-[#d1cde1] text-[12px] font-[600] ml-auto flex items-center justify-center gap-2">
-              <ArrowTrendingUpIcon className="w-5 h-5 text-white " />
-              Level 4
+            <p className="text-[#d1cde1] text-[12px] font-[600] flex items-center justify-center gap-2">
+              <ArrowTrendingUpIcon className="w-5 h-5 text-white" /> Level 4
             </p>
           </div>
-          <div className="w-full bg-[#4b2f8d] rounded-full h-1">
+
+          <div className="w-full bg-[#4b2f8d] rounded-full h-1 mt-2">
             <div
               className="bg-[#8861ea] h-1 rounded-tl-lg rounded-bl-lg"
               style={{ width: "50%" }}
             />
           </div>
+
           <button
             type="button"
             onClick={() => router.push("/challenges/storytelling")}

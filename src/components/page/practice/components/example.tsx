@@ -3,8 +3,8 @@ import { SpeakerWaveIcon } from "@heroicons/react/24/outline";
 
 function Example() {
   return (
-    <div className="mt-10">
-      <div className="max-w-screen-lg p-4 mx-auto bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 ">
+    <div className="mt-10 p-6 sm:p-0">
+      <div className="max-w-screen-lg p-4 mx-auto bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8">
         <div className="flex items-center gap-4">
           <SpeakerWaveIcon className="w-6 h-6 text-[#7c57d7]" />
           <h5 className="mb-2 text-xl font-[600] text-white">

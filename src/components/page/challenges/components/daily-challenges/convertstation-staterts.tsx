@@ -23,27 +23,28 @@ function ConvertstationStaterts() {
         </h5>
         <div className="mt-4 flex items-center w-full">
           <div className="space-y-4 mt-4 w-full">
-            <div className="flex items-center space-x-4">
-              <div className="relative rounded-full px-3 font-bold py-1 text-[12px] text-[#21b95b] ring-[#3b2372] ring-1 bg-[#1c243b]">
+            <div className="flex flex-wrap items-center  gap-2 sm:gap-4">
+              <div className="relative rounded-full font-bold px-3 py-1 text-[12px] text-[#21b95b] ring-[#3b2372] ring-1 bg-[#1c243b]">
                 Easy
               </div>
-              <div className="relative rounded-full font-bold px-3 py-1 text-[12px] text-[#8660e7] ring-1 ring-[#3b2372] bg-[#26164c]">
+              <div className="relative rounded-full px-3 py-1 font-bold text-[12px] text-[#8660e7] ring-1 ring-[#3b2372] bg-[#26164c]">
                 100 Points
               </div>
-              <div className="relative flex items-center font-bold justify-center gap-1 rounded-full px-3 py-1 text-[12px] text-[#d2cce8] ring-1 ring-[#4b2f8d] bg-[#4b2f8d]">
-                <ClockIcon className="w-4 h-4 text-white" />1 days left
+              <div className="relative flex items-center justify-center font-bold gap-1 rounded-full px-3 py-1 text-[12px] text-[#21b95b] ring-1 ring-[#4b2f8d] bg-[#1c243b]">
+                <ClockIcon className="w-4 h-4 text-[#21b95b]" />1 days left
               </div>
             </div>
-            <div className="flex items-center w-full">
-              <p className="text-[#d1cde1] text-[12px] font-bold flex items-center justify-center gap-2">
-                <UsersIcon className="w-5 h-5 text-white" />
-                237 Participants
+
+            <div className="flex flex-wrap items-center justify-between w-full mt-2">
+              <p className="text-[#d1cde1] text-[12px] flex items-center justify-center gap-2 font-[600]">
+                <UsersIcon className="w-5 h-5 text-white" /> 412 Participants
               </p>
-              <p className="text-[#d1cde1] text-[12px] font-[600] ml-auto flex items-center justify-center gap-2">
+              <p className="text-[#d1cde1] text-[12px] font-[600] flex items-center justify-center gap-2">
                 <ArrowTrendingUpIcon className="w-5 h-5 text-white " />
                 Level 2
               </p>
             </div>
+
             <div className="w-full bg-[#4b2f8d] rounded-full h-1">
               <div
                 className="bg-[#8861ea] h-1 rounded-tl-lg rounded-bl-lg"

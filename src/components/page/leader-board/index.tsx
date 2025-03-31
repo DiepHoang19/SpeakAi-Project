@@ -40,7 +40,7 @@ function Leaderboard() {
 
   return (
     <div>
-      <div className="mt-[10rem] max-w-screen-2xl mx-auto sm:p-2 p-6">
+      <div className=" mt-[5rem] sm:mt-[10rem] max-w-screen-2xl mx-auto sm:p-2 p-6">
         <div className="flex items-center gap-4 ">
           <ArrowLeftIcon
             className="w-4 h-4 cursor-pointer"
