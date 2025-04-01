@@ -42,7 +42,7 @@ function SignIn({ setActiveTab }: any) {
     <>
       <form onSubmit={handleSubmit(onSubmitForm)} className="sm:p-0 p-4">
         <div className="mb-5">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block mb-2 text-sm font-medium text-white">
             Username
           </label>
           <div className="relative">
@@ -62,7 +62,7 @@ function SignIn({ setActiveTab }: any) {
               {...register("userName")}
               type="text"
               name="userName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#010005] border placeholder:text-white border-[#4b2f8d] text-white focus:border-[#4b2f8d] focus:ring-[#4b2f8d] text-sm rounded-lg block w-full ps-10 p-2.5"
               placeholder="Choose a username"
             />
           </div>
@@ -72,7 +72,7 @@ function SignIn({ setActiveTab }: any) {
         </div>
 
         <div className="mb-5">
-          <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+          <label className="block mb-2 text-sm font-medium text-white">
             Password
           </label>
           <div className="relative">
@@ -92,7 +92,7 @@ function SignIn({ setActiveTab }: any) {
               {...register("password")}
               type="password"
               name="password"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-[#010005] border placeholder:text-white border-[#4b2f8d] text-white focus:border-[#4b2f8d] focus:ring-[#4b2f8d] text-sm rounded-lg block w-full ps-10 p-2.5"
               placeholder="Create a password"
             />
           </div>

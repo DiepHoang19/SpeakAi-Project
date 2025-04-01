@@ -138,7 +138,7 @@ function TableLeaderBoard() {
             strokeLinejoin="round"
           />
         </svg>
-        <p className="text-lg font-bold"> Leaderboard Rankings</p>
+        <p className="text-lg font-bold text-white"> Leaderboard Rankings</p>
       </div>
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
         <thead className="text-xs text-white bg-[#341e64]">

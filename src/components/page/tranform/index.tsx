@@ -5,10 +5,10 @@ function Transform() {
   return (
     <div className="mt-16 p-4">
       <div className="lg:w-4xl w-full p-4 mx-auto text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8">
-        <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+        <h5 className="mb-2 text-3xl font-bold text-white">
           Ready to transform your language skills?
         </h5>
-        <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
+        <p className="mb-5 text-base text-gray-400 sm:text-lg">
           Join thousands of learners who have improved their pronunciation and
           speaking abilities with SpeakAl.
         </p>

@@ -28,7 +28,7 @@ function Account() {
     <div className="mt-16 mx-auto lg:w-7xl">
       <div className="flex items-center gap-2">
         <ArrowLeftIcon
-          className="w-4 h-4 cursor-pointer"
+          className="w-4 h-4 cursor-pointer text-white"
           onClick={() => router.push("/")}
         />
         <p className="text-lg text-white ">Back to Home</p>
@@ -36,10 +36,10 @@ function Account() {
       <div className="mt-10 p-4 grid sm:grid-cols-2 grid-cols-1 mx-auto lg:w-6xl">
         <div className="lg:w-lg w-full mx-auto bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8">
           <div className="mb-4 p-4 sm:p-4 ">
-            <h5 className="font-[600] text-[30px] mb-2">
+            <h5 className="font-[600] text-[30px] mb-2 text-white">
               {activeTab === "sign-in" ? "Sign In" : "Create Account"}
             </h5>
-            <p className="text-sm">
+            <p className="text-sm text-white">
               {activeTab === "sign-in"
                 ? "Enter your credentials to access your account"
                 : "Fill out the form to create your account"}
@@ -86,25 +86,29 @@ function Account() {
           </p>
           <div className="mt-10">
             <div>
-              <p>Al-Powered Feedback</p>
-              <p>
+              <p className="text-white">Al-Powered Feedback</p>
+              <p className="text-white">
                 Get personalized feedback on your pronunciation, grammar, and
                 fluency.
               </p>
             </div>
             <div className="mt-4">
-              <p>Daily Challenges</p>
-              <p>Improve consistently with our engaging speaking challenges.</p>
+              <p className="text-white">Daily Challenges</p>
+              <p className="text-white">
+                Improve consistently with our engaging speaking challenges.
+              </p>
             </div>
             <div className="mt-4">
-              <p>Progress Tracking</p>
-              <p>See your improvement over time with detailed analytics..</p>
+              <p className="text-white">Progress Tracking</p>
+              <p className="text-white">
+                See your improvement over time with detailed analytics..
+              </p>
             </div>
           </div>
           <div className="mt-10 p-6 bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm">
             <figure className="max-w-screen-md">
               <blockquote>
-                <p className="text-xl italic text-gray-900 dark:text-white">
+                <p className="text-xl italic text-white">
                   "SpeakAl helped me improve my Korean pronunciation in just a
                   few weeks. The feedback is so detailed and helpful!"
                 </p>
@@ -115,11 +119,11 @@ function Account() {
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                   alt="profile picture"
                 />
-                <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                  <cite className="pe-3 font-medium text-gray-900 dark:text-white">
+                <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-700">
+                  <cite className="pe-3 font-medium text-white">
                     Bonnie Green
                   </cite>
-                  <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
+                  <cite className="ps-3 text-sm text-gray-400">
                     CTO at Flowbite
                   </cite>
                 </div>

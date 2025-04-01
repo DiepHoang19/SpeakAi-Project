@@ -87,7 +87,7 @@ function ChallengeDetail() {
           <div className="sm:flex items-center">
             <div className="flex items-center gap-2">
               <ArrowLeftIcon
-                className="w-4 h-4 cursor-pointer"
+                className="w-4 h-4 cursor-pointer text-white"
                 onClick={() => router.push("/challenges")}
               />
               <p className="text-xs text-white">Back to Challenges</p>

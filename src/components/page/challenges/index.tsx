@@ -23,7 +23,7 @@ function Challenges() {
       <div className=" mt-[4rem] sm:mt-[10rem] max-w-screen-2xl mx-auto sm:p-2 p-6">
         <div className="flex items-center gap-4 ">
           <ArrowLeftIcon
-            className="w-4 h-4 cursor-pointer"
+            className="w-4 h-4 cursor-pointer text-white"
             onClick={() => router.push("/")}
           />
           <p className="text-xs text-white ">Back</p>
@@ -42,7 +42,7 @@ function Challenges() {
       <div className="max-w-screen-2xl mx-auto mt-4">
         <div className="flex items-center space-x-2 ml-4">
           <ClockIcon className="w-6 h-6 text-[#7452c9]" />
-          <h3 className="font-bold text-xl">Daily Challenges</h3>
+          <h3 className="font-bold text-xl text-white">Daily Challenges</h3>
         </div>
         <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
           <ConvertstationStaterts />
@@ -53,7 +53,7 @@ function Challenges() {
       <div className="max-w-screen-2xl mx-auto mt-4">
         <div className="flex items-center space-x-2 ml-4">
           <CalendarIcon className="w-6 h-6 text-[#7452c9]" />
-          <h3 className="font-bold text-xl">Weekly Challenges</h3>
+          <h3 className="font-bold text-xl text-white">Weekly Challenges</h3>
         </div>
         <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
           <TravelDialogue />
@@ -63,7 +63,7 @@ function Challenges() {
       <div className="max-w-screen-2xl mx-auto mt-4">
         <div className="flex items-center space-x-2 ml-4">
           <ArrowTrendingUpIcon className="w-6 h-6 text-[#7452c9]" />
-          <h3 className="font-bold text-xl">Monthly Challenges</h3>
+          <h3 className="font-bold text-xl text-white">Monthly Challenges</h3>
         </div>
         <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6 p-6">
           <PublicSpeech />

@@ -4,9 +4,7 @@ import React from "react";
 function OurMission() {
   return (
     <div className="w-full p-4  text-center bg-[#190b37] border border-[#291650] rounded-[16px] shadow-sm sm:p-8 ">
-      <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-        Our Mission
-      </h5>
+      <h5 className="mb-2 text-3xl font-bold text-white">Our Mission</h5>
       <p className="max-w-3xl mx-auto mb-5 text-base text-white sm:text-lg ">
         At SpeakAl, we're on a mission to transform language learning through
         artificial intelligence. We believe everyone deserves the opportunity to

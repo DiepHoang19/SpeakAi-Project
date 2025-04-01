@@ -10,7 +10,7 @@ function ContactUs() {
   return (
     <div className="sm:flex space-x-6">
       <div className="sm:w-[50%] w-full">
-        <p className="font-bold text-2xl">Contact Us</p>
+        <p className="font-bold text-2xl text-white">Contact Us</p>
         <div className="mt-4 w-full bg-[#190b37] border border-[#462c84] rounded-[16px] shadow-sm p-6">
           <div className="flex items-start">
             <BuildingOfficeIcon className="w-6 h-6 text-[#6848b6]" />
@@ -47,14 +47,16 @@ function ContactUs() {
           </div>
           <button
             type="button"
-            className="text-white w-full mt-4 bg-[#8861ea] hover:bg-[#8861ea] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
+            className="text-white cursor-pointer w-full mt-4 bg-[#8861ea] hover:bg-[#8861ea] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
           >
             Contact Support
           </button>
         </div>
       </div>
       <div className="sm:w-[50%] w-full ml-auto mt-4 sm:mt-0">
-        <p className="font-bold text-2xl">Frequently Asked Questions</p>
+        <p className="font-bold text-2xl text-white">
+          Frequently Asked Questions
+        </p>
         <div className="w-full mt-4 mx-auto bg-[#010005] border border-[#180c34] rounded-[16px] shadow-sm p-6">
           <div className="flex items-center gap-2">
             <CheckCircleIcon className="w-6 h-6 text-[#6848b6]" />

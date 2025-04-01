@@ -62,7 +62,7 @@ function Review() {
                 </svg>
               </div>
               <blockquote>
-                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                <p className="text-2xl font-semibold text-white">
                   "SpeakAl helped me improve my Korean pronunciation in just a
                   few weeks. The feedback is so detailed and helpful!"
                 </p>
@@ -74,7 +74,7 @@ function Review() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                  <cite className="pe-3 font-medium text-gray-900 dark:text-white">
+                  <cite className="pe-3 font-medium text-white">
                     Bonnie Green
                   </cite>
                   <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
@@ -134,7 +134,7 @@ function Review() {
                 </svg>
               </div>
               <blockquote>
-                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                <p className="text-2xl font-semibold text-white">
                   "I love the daily challenges. They keep me motivated and I can
                   see my progress in the analytics dashboard. can see my
                   dashboard"
@@ -147,7 +147,7 @@ function Review() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                  <cite className="pe-3 font-medium text-gray-900 dark:text-white">
+                  <cite className="pe-3 font-medium text-white">
                     Bonnie Green
                   </cite>
                   <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
@@ -207,7 +207,7 @@ function Review() {
                 </svg>
               </div>
               <blockquote>
-                <p className="text-2xl font-semibold text-gray-900 dark:text-white">
+                <p className="text-2xl font-semibold text-white">
                   "The Al feedback is like having a personal tutor available
                   24/7. My speaking confidence has improved dramatically."
                 </p>
@@ -219,7 +219,7 @@ function Review() {
                   alt="profile picture"
                 />
                 <div className="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-                  <cite className="pe-3 font-medium text-gray-900 dark:text-white">
+                  <cite className="pe-3 font-medium text-white">
                     Bonnie Green
                   </cite>
                   <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">

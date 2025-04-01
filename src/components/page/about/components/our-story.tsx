@@ -44,7 +44,7 @@ function OurStory() {
         </h3>
       </div>
       <div className="flex max-w-4xl items-center mx-auto justify-center">
-        <ol className="relative mx-auto border-s border-gray-200 dark:border-gray-700 mt-10">
+        <ol className="relative mx-auto border-s border-gray-700 mt-10">
           {dataTimeline.map((item) => (
             <li className="mb-10 ms-6" key={item.year}>
               <span className="absolute flex items-center text-[#7c58d7] font-bold justify-center bg-[#1f113d] rounded-full -start-3">
@@ -53,7 +53,7 @@ function OurStory() {
               <h3 className="flex items-center mb-1 ml-4 text-lg font-semibold text-white">
                 {item.title}
               </h3>
-              <p className="mb-4 text-base ml-4 font-normal text-gray-500 dark:text-gray-400">
+              <p className="mb-4 text-base ml-4 font-normal text-gray-400 ">
                 {item.description}
               </p>
             </li>
