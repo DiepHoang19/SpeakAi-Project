@@ -8,6 +8,7 @@ import {
   ChartPieIcon,
   LanguageIcon,
 } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 function HomePage() {
   return (
@@ -37,15 +38,18 @@ function HomePage() {
               Al feedback. Practice anytime, anywhere, and track your progress.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
+              <Link
+                href="/sign-in?tab=register"
                 className="rounded-[10px] bg-[#9061F9] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#9061F9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9061F9]"
               >
                 Get Started Now
-              </a>
-              <a href="#" className="text-sm/6 font-semibold text-white">
+              </Link>
+              <Link
+                href="/about"
+                className="text-sm/6 font-semibold text-white"
+              >
                 Learn more <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-2 sm:flex sm:items-center sm:justify-center gap-4 mx-auto mt-8 text-center">
               <div className="flex items-center gap-2 justify-center">

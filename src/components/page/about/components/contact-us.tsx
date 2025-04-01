@@ -18,8 +18,8 @@ function ContactUs() {
               <p className="text-base text-white font-[600] sm:text-sm">
                 Headquarters
               </p>
-              <p className="text-base text-white font-[600] sm:text-sm">
-                101 Innovation Drive, Palo Alto, CA 94301, USA
+              <p className="text-base text-white font-[600] sm:text-sm mt-1">
+                305 Trần Hưng Đạo, Sơn Trà Đà nẵng
               </p>
             </div>
           </div>
@@ -29,7 +29,7 @@ function ContactUs() {
               <p className="text-base text-white font-[600] sm:text-sm">
                 Support Hours
               </p>
-              <p className="text-base text-white font-[600] sm:text-sm">
+              <p className="text-base text-white font-[600] sm:text-sm mt-1">
                 Monday - Friday: 9 AM - 6 PM (PST)
               </p>
             </div>
@@ -40,8 +40,8 @@ function ContactUs() {
               <p className="text-base text-white font-[600] sm:text-sm">
                 Support Languages
               </p>
-              <p className="text-base text-white font-[600] sm:text-sm">
-                English, Spanish, French, Japanese, Korean, Mandarin
+              <p className="text-base text-white font-[600] sm:text-sm mt-1">
+                English
               </p>
             </div>
           </div>
@@ -64,20 +64,18 @@ function ContactUs() {
               What languages does SpeakAl support?
             </p>
           </div>
-          <p className="text-sm text-gray-400">
-            We currently support 20+ languages including English, Spanish,
-            French, German, Italian, Portuguese, Japanese, Korean, Mandarin,
-            Cantonese, Russian, Arabic, and more.
+          <p className="text-sm text-gray-400 mt-2">
+            We currently support 20+ languages including English,
           </p>
         </div>
         <div className="w-full mt-4 mx-auto bg-[#010005] border border-[#180c34] rounded-[16px] shadow-sm p-6">
           <div className="flex items-center gap-2">
             <CheckCircleIcon className="w-6 h-6 text-[#6848b6]" />
-            <p className="text-lg text-white">
+            <p className="text-lg text-white ">
               How accurate is the Al feedback?
             </p>
           </div>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-2">
             Our Al feedback system achieves over 95% accuracy for pronunciation
             errors when compared to professional language teachers' assessments.
             We continually train and improve our models.
@@ -90,7 +88,7 @@ function ContactUs() {
               Do I need any special equipment?
             </p>
           </div>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-2">
             Just a standard microphone on your computer or mobile device is
             sufficient. For best results, we recommend using the platform in a
             quiet environment.
@@ -103,7 +101,7 @@ function ContactUs() {
               Is SpeakAl suitable for complete beginners?
             </p>
           </div>
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 mt-2">
             Absolutely! SpeakAl adapts to your skill level, providing
             appropriate challenges and feedback whether you're just starting or
             at an advanced level.

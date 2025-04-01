@@ -9,6 +9,8 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import Example from "./components/example";
 import Pronuciation from "./components/pronuciation";
+import Conversation from "./components/convertsation";
+import Grammar from "./components/grammar";
 
 function Practice() {
   const tabs = [
@@ -89,7 +91,14 @@ function Practice() {
           </div>
         </div>
       </div>
-      <Pronuciation />
+      {activeTab === "Pronunciation" ? (
+        <Pronuciation />
+      ) : activeTab === "Conversation" ? (
+        <Conversation />
+      ) : (
+        <Grammar />
+      )}
+
       <Example />
     </>
   );

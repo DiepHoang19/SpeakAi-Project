@@ -88,7 +88,7 @@ function TableLeaderBoard() {
 
   return (
     <div className="relative border border-[#4b2f8d] overflow-x-auto shadow-md rounded-[16px] bg-[#190b37]">
-      <div className="p-4 flex items-center space-x-4 space-y-4">
+      <div className="p-4 flex items-center gap-2 ">
         <svg
           width="30px"
           height="30px"
