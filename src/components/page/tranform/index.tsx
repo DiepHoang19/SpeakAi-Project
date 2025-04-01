@@ -1,4 +1,5 @@
 import { ChevronRightIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 import React from "react";
 
 function Transform() {
@@ -13,12 +14,15 @@ function Transform() {
           speaking abilities with SpeakAl.
         </p>
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-          <a className="w-full sm:w-auto bg-[#8861ea] focus:ring-4 focus:outline-none text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
+          <Link
+            href="/sign-in?tab=register"
+            className="w-full sm:w-auto bg-[#8861ea] focus:outline-none text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5"
+          >
             <div className="text-left cursor-pointer">
               <div className="text-xs">Get Started Now</div>
             </div>
             <ChevronRightIcon className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
